@@ -11,7 +11,7 @@ from flask import Flask, request, jsonify
 
 
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7222413172:AAFyJlIWb645W8HVx7koZvDycTB1r0N6mG4')
+bot = telebot.TeleBot('7275541136:AAF93M4S0aF1ixueVDE2M-I0nutXQPIjFo8')
 
 # Admin user IDs
 admin_id = ["1397693715,6022173368"]
